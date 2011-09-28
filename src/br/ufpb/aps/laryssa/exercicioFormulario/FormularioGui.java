@@ -11,15 +11,14 @@ public class FormularioGui {
 	}
 	
 	public void telaPrincipal(){
-		int cont = 3;
+		System.out.println("---- Sistema de cadastro ----");
+		System.out.println(" [1] Cadastrar");
+		System.out.println(" [2] Listar itens cadastrados");
+		System.out.println(" [0] Sair");
+		int cont = num.nextInt();
 		String temp;
-		while(cont != 0){			
-			System.out.println("---- Sistema de cadastro ----");
-			System.out.println(" [1] Cadastrar");
-			System.out.println(" [2] Listar itens cadastrados");
-			System.out.println(" [0] Sair");
-			cont = num.nextInt();
-			 
+		
+		while(cont != 0){ 
 			switch (cont) {
 				case 1:
 					System.out.println("---- Cadastro de Usuario ----");
@@ -29,8 +28,9 @@ public class FormularioGui {
 					temp = num.next();
 					if((temp == "c") || (temp == "C")){
 						cont = 1;
-					}else cont = 0;
+					}else cont = 3;
 				break;
+				
 				case 2:
 					System.out.println("---- Listar cadastros ----");
 					formFacade.listarCadastro();
@@ -39,7 +39,15 @@ public class FormularioGui {
 					temp = num.next();
 					if((temp == "c") || (temp == "C")){
 						break;
-					}else cont = 0;
+					}else cont = 3;
+				break;
+				
+				case 3:
+					System.out.println("---- Sistema de cadastro ----");
+					System.out.println(" [1] Cadastrar");
+					System.out.println(" [2] Listar itens cadastrados");
+					System.out.println(" [0] Sair");
+					cont = num.nextInt();
 				break;
 			}
 		}

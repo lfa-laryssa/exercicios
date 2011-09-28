@@ -13,7 +13,7 @@ public class ValidadorEmail implements Validador{
 		
 		//else
 		//fazer a comparacao se tem numero
-			//if(valor.)
+		//throw new ValorInvalidoException("ERRO: E-mail invalido");
 	}
 
 	

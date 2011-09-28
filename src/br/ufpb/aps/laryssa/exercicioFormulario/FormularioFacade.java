@@ -20,8 +20,8 @@ public class FormularioFacade {
 	}
 	
 	public void listarCadastro() {
-		for(Formulario f: listFormulario){
-			System.out.println(listFormulario);
+		for(int i = 0; i < listFormulario.size(); i++){
+			System.out.println(listFormulario.get(i));
 		}
 	}
 	
