@@ -10,10 +10,10 @@ public class ValidadorEmail implements Validador{
 	public void validar(String valor) throws ValorInvalidoException {
 		if(valor.indexOf("@") < 0)
 			throw new ValorInvalidoException("ERRO: E-mail invalido");
-		
 		//else
 		//fazer a comparacao se tem numero
-		//throw new ValorInvalidoException("ERRO: E-mail invalido");
+			//throw new ValorInvalidoException("ERRO: E-mail invalido");
+		System.out.println("Ok");
 	}
 
 	

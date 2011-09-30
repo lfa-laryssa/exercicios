@@ -20,7 +20,7 @@ public class Campo {
 			throw new ValorInvalidoException(e.getMessage());
 		}
 	}
-	
+
 	
 	
 // gets e sets	

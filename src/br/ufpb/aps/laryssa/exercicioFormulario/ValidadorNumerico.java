@@ -16,13 +16,12 @@ public class ValidadorNumerico implements Validador{
 				throw new ValorInvalidoException("ERRO: Valor Invalido");
 			if(v > tamMax)
 				throw new ValorInvalidoException("ERRO: O valor máximo de Idade e´ "+tamMax);
-
 			//fazer o teste se contem letras
-			//throw new ValorInvalidoException("ERRO: Idade deve conter apenas números");
-		
+				//throw new ValorInvalidoException("ERRO: Idade deve conter apenas números");
 		}catch(NumberFormatException e){
 			throw new ValorInvalidoException("ERRO: O valor nao e´ um inteiro!");
 		}
+		System.out.println("Ok");
 	}
 
 	

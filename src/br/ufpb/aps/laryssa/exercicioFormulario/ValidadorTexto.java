@@ -10,9 +10,9 @@ public class ValidadorTexto implements Validador{
 	public void validar(String valor) throws ValorInvalidoException {
 		if(valor.length() > tamMax)
 			throw new ValorInvalidoException("ERRO: Nome deve ter no máximo "+ tamMax +" caracteres");
-		
 		//fazer o teste de comparacao se tem numero no campo
-		//throw new ValorInvalidoException("ERRO: O Nome é um campo texto");
+			//throw new ValorInvalidoException("ERRO: O Nome é um campo texto");
+		System.out.println("Ok");
 	}
 
 	
