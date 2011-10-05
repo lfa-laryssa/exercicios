@@ -14,6 +14,7 @@ public class Main {
 		CustoAquisicao custoBase = new CustoAquisicao(15.0);
 		
 		CustoFuncionarioDecorator func = new CustoFuncionarioDecorator(custoBase);
+		func.setSalario(15.0);
 		
 		CustoIngredienteDecorator sal = new CustoIngredienteDecorator(func);
 		sal.setPreco(0.30);
