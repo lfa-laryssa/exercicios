@@ -27,9 +27,8 @@ public class Main {
 		
 		file.setCalculadorCusto(cebola);
 		
-		// essas duas linhas tambem são para implementar?
-		//Produto feijao = new Produto("Televisao");
-		//feijao.setCalculadorCusto(new ProdutoEletronicoCalculadorCusto());
+		Produto feijao = new Produto("Televisao");
+		feijao.setCalculadorCusto(new ProdutoEletronicoCalculadorCusto());
 		
 		System.out.println(file.calcularCusto());
 
