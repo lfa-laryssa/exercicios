@@ -12,16 +12,6 @@ public class FormularioFacade {
 		this.listFormulario = new LinkedList<Formulario>();
 	}
 	
-	public void criarFormulario(){
-		this.formulario = new Formulario("Cadastro de Usua´rios");
-		formulario.addCampo(new Campo("Nome", "nome", new ValidadorTexto(5, 300)));
-		formulario.addCampo(new Campo("Email", "email", new ValidadorEmail(30)));
-		formulario.addCampo(new Campo("Idade", "idade", new ValidadorNumerico(0, 150)));
-		formulario.addCampo(new Campo("Senha Texto", "senhaTxt", new SenhaTextoDecorator(new ValidadorSenha())));
-		formulario.addCampo(new Campo("Senha Numerica", "senhaNum", new SenhaNumericaDecorator(new ValidadorSenha())));
-		this.listFormulario.add(formulario);
-	}
-	
 	public void listarCadastro() {
 		for(Campo c: formulario.getListCampos()){
 			System.out.print(c.getLabel()+": ");
@@ -44,6 +34,7 @@ public class FormularioFacade {
 
 	public void setFormulario(Formulario formulario) {
 		this.formulario = formulario;
+		listFormulario.add(formulario);
 	}
 
 	public List<Formulario> getListFormulario() {
