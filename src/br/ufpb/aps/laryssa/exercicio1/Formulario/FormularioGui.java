@@ -35,7 +35,7 @@ public class FormularioGui {
 					System.out.println("Fim\n");
 					System.out.println("[C]ontinua ou [F]inaliza?");
 					temp = num.next();
-					if((temp == "c") || (temp == "C")){
+					if((temp.equals("c")) || (temp.equals("C"))){
 						cont = 2;
 						break;
 					}else cont = 3;
