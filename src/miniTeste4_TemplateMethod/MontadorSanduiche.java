@@ -1,4 +1,4 @@
-package miniTeste4;
+package miniTeste4_TemplateMethod;
 
 public class MontadorSanduiche {
 	

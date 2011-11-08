@@ -1,15 +1,15 @@
-package miniTeste4;
+package miniTeste4_TemplateMethod;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class MistoQuenteTemplate implements MontadorTemplate{
+public class HamburgueTamplate implements MontadorTemplate {
 	private List<Ingrediente> ingredientes;
-	private String misto;
+	private String hamburgue;
 	
-	public MistoQuenteTemplate(){
+	public HamburgueTamplate(){
 		this.setIngredientes(new LinkedList<Ingrediente>());
-		this.misto = "";
+		this.hamburgue = "";
 	}
 	
 	public void coletarIngredientes(){
@@ -18,12 +18,12 @@ public class MistoQuenteTemplate implements MontadorTemplate{
 	
 	public void montarSanduiche(){
 		for(Ingrediente i : ingredientes){
-			misto += i.getNome() + "; ";
+			hamburgue += i.getNome() + "; ";
 		}
 	}
 	
 	public void esquentar(){
-		System.out.println("O misto esta pronto e tem: " + misto);
+		System.out.println("O hamburgue esta pronto e tem: " + hamburgue);
 	}
 	
 	public void addIngrediente(Ingrediente i){

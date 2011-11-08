@@ -1,4 +1,4 @@
-package miniTeste4;
+package miniTeste4_TemplateMethod;
 
 public interface MontadorTemplate {
 	public void coletarIngredientes();
